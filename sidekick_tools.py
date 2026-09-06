@@ -55,6 +55,7 @@ def mcp_connections(sandbox: str) -> dict:
                 "@playwright/mcp@0.0.80",
                 "--isolated",
                 "--headless",
+                "--no-sandbox",
             ],
         },
         "filesystem": {
