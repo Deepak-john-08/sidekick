@@ -48,7 +48,8 @@ def mcp_connections(sandbox: str) -> dict:
         "playwright": {
             "transport": "stdio",
             "command": "npx",
-            "args": ["@playwright/mcp@latest", "--isolated"],
+            #"args": ["@playwright/mcp@latest", "--isolated"],
+            "args": ["-y", "@playwright/mcp@0.0.80", "--isolated"],
         },
         "filesystem": {
             "transport": "stdio",
