@@ -2,6 +2,7 @@
   "name": "sidekick-app",
   "private": true,
   "dependencies": {
-    "@playwright/mcp": "0.0.80"
+    "@playwright/mcp": "0.0.80",
+    "@modelcontextprotocol/server-filesystem": "2025.8.21"
   }
 }
