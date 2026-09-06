@@ -1,5 +1,5 @@
 """Gradio app for the Sidekick. Run with: uv run app.py"""
-import os
+
 import html
 
 import gradio as gr
@@ -99,14 +99,5 @@ with gr.Blocks(title="Sidekick") as ui:
     reset_button.click(reset, [sidekick], [message, success_criteria, chatbot, approve_button, sidekick])
 
 
-#if __name__ == "__main__":
-    #ui.launch(inbrowser=True, **LAUNCH_STYLE)
-
-
 if __name__ == "__main__":
-    ui.launch(
-        server_name="0.0.0.0",
-        server_port=int(os.environ.get("PORT", 10000)),
-        inbrowser=False,
-        **LAUNCH_STYLE
-    )
+    ui.launch(inbrowser=True, **LAUNCH_STYLE)

@@ -48,25 +48,12 @@ def mcp_connections(sandbox: str) -> dict:
         "playwright": {
             "transport": "stdio",
             "command": "npx",
-           # "args": ["@playwright/mcp@latest", "--isolated"],
-            #"args": ["-y", "@playwright/mcp@0.0.80", "--isolated"],
-            "args": [
-                "--no-install",
-                "@playwright/mcp@0.0.80",
-                "--isolated",
-                "--headless",
-                "--no-sandbox",
-            ],
+            "args": ["@playwright/mcp@latest", "--isolated"],
         },
         "filesystem": {
             "transport": "stdio",
             "command": "npx",
-            #"args": ["-y", "@modelcontextprotocol/server-filesystem", sandbox],
-            "args": [
-                "--no-install",
-                "@modelcontextprotocol/server-filesystem",
-                sandbox,
-            ],
+            "args": ["-y", "@modelcontextprotocol/server-filesystem", sandbox],
         },
     }
 
