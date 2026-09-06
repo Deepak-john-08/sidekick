@@ -45,12 +45,12 @@ def request_human_help(instructions: str) -> str:
 def mcp_connections(sandbox: str) -> dict:
     """The MCP servers the Sidekick uses: a headed browser and a sandbox filesystem."""
     return {
-        "playwright": {
-            "transport": "stdio",
-            "command": "npx",
+        #"playwright": {
+           # "transport": "stdio",
+          #  "command": "npx",
             #"args": ["@playwright/mcp@latest", "--isolated"],
-            "args": ["-y", "@playwright/mcp@0.0.80", "--isolated"],
-        },
+           # "args": ["-y", "@playwright/mcp@0.0.80", "--isolated"],
+        #},
         "filesystem": {
             "transport": "stdio",
             "command": "npx",
